@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800;900&display=swap');
+
+:root {
+  --bg: #020617;
+  --bg-soft: #0f172a;
+  --green: #22c55e;
+  --red: #ef4444;
+  --text: #f8fafc;
+  --muted: #94a3b8;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  background: radial-gradient(circle at top, #0f172a, #020617);
+  color: var(--text);
+  overflow-x: hidden;
+}
+
+/* NAVBAR */
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  backdrop-filter: blur(12px);
+  background: rgba(2,6,23,0.75);
+  padding: 16px 8%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 999;
+}
+
+nav h1 {
+  font-weight: 900;
+  letter-spacing: 1px;
+}
+
+nav a {
+  color: var(--text);
+  text-decoration: none;
+  margin-left: 25px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: var(--green);
+}
+
+/* HERO */
+.hero {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: 0 8%;
+  position: relative;
+}
+
+.hero h2 {
+  font-size: 4rem;
+  font-weight: 900;
+  line-height: 1.1;
+}
+
+.hero span {
+  color: var(--green);
+}
+
+.hero p {
+  margin-top: 20px;
+  max-width: 600px;
+  color: var(--muted);
+}
+
+/* BUTTON */
+.btn {
+  display: inline-block;
+  margin-top: 30px;
+  padding: 14px 30px;
+  background: var(--green);
+  color: black;
+  font-weight: 700;
+  border-radius: 40px;
+  text-decoration: none;
+  transition: transform 0.3s;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+}
+
+/* SECTION */
+section {
+  padding: 120px 8%;
+}
+
+.card {
+  background: rgba(255,255,255,0.04);
+  border-radius: 20px;
+  padding: 40px;
+  box-shadow: 0 40px 80px rgba(0,0,0,0.4);
+}
+
+/* STATUS */
+.status {
+  font-size: 1.4rem;
+  font-weight: 800;
+  margin-top: 15px;
+}
+
+.open { color: var(--green); }
+.closed { color: var(--red); }
+
+/* FOOTER */
+footer {
+  padding: 40px;
+  text-align: center;
+  color: var(--muted);
+}
