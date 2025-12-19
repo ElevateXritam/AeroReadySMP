@@ -1,9 +1,9 @@
 async function loadStatus(){
-  const res=await fetch("https://api.mcsrvstat.us/2/AeroReadySMP.aternos.me");
+  const res=await fetch("https://api.mcsrvstat.us/2/AeroMineSMP.exaroton.me");
   const d=await res.json();
 
   document.getElementById("status").textContent=
-    d.online?"SERVER ONLINE":"SERVER OFFLINE";
+    d.online?"SERVER ONLINE":"SERVER OFFLINE":"SERVER QUENE":"SERVER RESTARTING";
   document.getElementById("status").className=
     "status "+(d.online?"open":"closed");
 
